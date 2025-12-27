@@ -1,0 +1,68 @@
+@import '~bootstrap/scss/bootstrap';
+@import "~slick-carousel/slick/slick.css";
+@import "~swiper/swiper-bundle.css";
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import '../../public/assets/scss/main.scss';
+
+/* Ensure product images render consistently sized on the frontend */
+.tp-product-thumb img,
+.tp-product-thumb-2 img,
+.tp-product-thumb-3 img,
+.tp-product-thumb-4 img,
+.tp-product-list-thumb img,
+.tp-category-thumb-2 img,
+.tp-featured-thumb img,
+.tp-product-sm-item img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* Header Login Icon Styles */
+.tp-header-login {
+  position: relative;
+
+  .tp-header-login-icon {
+    margin-right: 12px;
+
+    .tp-header-login-icon-btn {
+      cursor: pointer;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .tp-header-login-content {
+    .tp-header-login-content-btn {
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .tp-header-login-title {
+      font-size: 12px;
+      color: #666;
+      margin-top: 2px;
+    }
+  }
+}
+
+.tp-header-login-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
